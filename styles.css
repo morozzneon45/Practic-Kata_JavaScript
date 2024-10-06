@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'TTLakes';
+  font-style: normal;
+  font-weight: 300;
+  src: local('TTLakes'),
+       url('Assets/Fonts/TTLakes/TTLakes-Light.woff2') format('woff2'),
+       url('Assets/Fonts/TTLakes/TTLakes-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TTLakes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('TTLakes'),
+       url('Assets/Fonts/TTLakes/TTLakes-Regular.woff2') format('woff2'),
+       url('Assets/Fonts/TTLakes/TTLakes-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TTLakes';
+  font-style: normal;
+  font-weight: 500;
+  src: local('TTLakes'),
+       url('Assets/Fonts/TTLakes/TTLakes-Medium.woff2') format('woff2'),
+       url('Assets/Fonts/TTLakes/TTLakes-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TTLakes';
+  font-style: normal;
+  font-weight: 700;
+  src: local('TTLakes'),
+       url('Assets/Fonts/TTLakes/TTLakes-Bold.woff2') format('woff2'),
+       url('Assets/Fonts/TTLakes/TTLakes-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TTLakes';
+  font-style: normal;
+  font-weight: 800;
+  src: local('TTLakes'),
+       url('Assets/Fonts/TTLakes/TTLakes-Black.woff2') format('woff2'),
+       url('Assets/Fonts/TTLakes/TTLakes-Black.woff') format('woff');
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .main__companies-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+    margin-left: 32px;
+    margin-right: 33px;
+    margin-top: 24px;
+    margin-bottom: 84px;
+  }
+}
+
+@media (min-width: 1120px) {
+  /* Стили для больших экранов */
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  font-family: "TTLakes";
+  background-color: #F8F8F8;
+}
+
+button {
+  border: none;
+}
+
+.header {
+width: auto;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 16px;
+  color: #7E7E82;
+  height: 56px;
+  margin-top: 0;
+  border-top: 4px solid #D9FFF5;
+  background: linear-gradient(to right, #F8F8F8 40%, #ffffff 75%, #ffffff);
+  letter-spacing: 1px;
+}
+.main__companies-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px !important;
+  margin-left: 32px;
+  margin-right: 33px;
+  margin-top: 24px;
+  margin-bottom: 84px;
+}
+
+.main--companies-list_block {
+  width: 240px;
+  height: auto;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #EAEAEA;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.emblem {
+  max-width: 70%;
+  height: auto;
+}
+
+.icon {
+  width: 40px;
+  height: auto;
+  margin-left: 60px;
+}
+
+.main--button_hide-button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  font-weight: 500;
+  margin-left: 55px;
+  margin-bottom: 15px;
+}
+
+.main--button_hide-button:before {
+    transform: rotate(180deg);
+    content: url(Assets/Images/icons/expand.svg);
+    position: absolute;
+    left: 30px;
+}
+
+span {
+  font-size: 16px;
+  font-weight: normal;
+}
