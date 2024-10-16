@@ -2,98 +2,94 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
     <title>Ремонт техники</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class = "header">
       <p class = "header__title"> РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
     </header>
-    <main class = "main">
-      <div class="main__swiper">
       <div class="main__companies-list" id="companiesList">
-        <div class = "main__swiper--slide">
-<div class="main--companies-list_block">
+        <div class="swiper" id = "swiper">
+  <div class="swiper-wrapper">
+    <div class = "swiper-slide">
+<button class="main__companies-list_block">
   <img src="Assets/Images/emblems/Lenovo.svg" alt="Lenovo" class="emblem">
   <a href = "#"><img src="Assets/Images/icons/go.svg" alt="Подробнее" class="icon"></a>
+</button>
 </div>
-</div>
-<div class = "main__swiper--slide">
-<div class="main--companies-list_block">
+<div class = "swiper-slide">
+<button class="main__companies-list_block">
   <img src="Assets/Images/emblems/Samsung.svg" alt="Samsung" class="emblem">
     <a href = "#"><img src="Assets/Images/icons/go.svg" alt="Подробнее" class="icon"></a>
+</button>
 </div>
-</div>
-<div class = "main__swiper--slide">
-<div class="main--companies-list_block">
+<div class = "swiper-slide">
+<button class="main__companies-list_block">
   <img src="Assets/Images/emblems/Apple.svg" alt="Apple" class="emblem">
   <a href = "#"><img src="Assets/Images/icons/go.svg" alt="Подробнее" class="icon"></a>
+</button>
 </div>
-</div>
-<div class = "main__swiper--slide">
-<div class="main--companies-list_block">
+<div class = "swiper-slide">
+<button class="main__companies-list_block">
   <img src="Assets/Images/emblems/ViewSonic.svg" alt="ViewSonic" class="emblem">
   <a href = "#"><img src="Assets/Images/icons/go.svg" alt="Подробнее" class="icon"></a>
+</button>
 </div>
-</div>
-<div class = "main__swiper--slide">
-<div class="main--companies-list_block">
+<div class = "swiper-slide">
+<button class="main__companies-list_block">
   <img src="Assets/Images/emblems/Bosch.svg" alt="Bosch" class="emblem">
   <a href = "#"><img src="Assets/Images/icons/go.svg" alt="Подробнее" class="icon"></a>
+</button>
 </div>
-</div>
-<div class = "main__swiper--slide">
-<div class="main--companies-list_block">
+<div class = "swiper-slide">
+<button class="main__companies-list_block">
   <img src="Assets/Images/emblems/HP.svg" alt="HP" class="emblem">
   <a href = "#"><img src="Assets/Images/icons/go.svg" alt="Подробнее" class="icon"></a>
+</button>
 </div>
-</div>
-<div class = "main__swiper--slide">
-<div class="main--companies-list_block">
+<div class = "swiper-slide">
+<button class="main__companies-list_block hidden_tablet">
   <img src="Assets/Images/emblems/Acer.svg" alt="Acer" class="emblem">
   <a href = "#"><img src="Assets/Images/icons/go.svg" alt="Подробнее" class="icon"></a>
+</button>
 </div>
-</div>
-<div class = "main__swiper--slide">
-<div class="main--companies-list_block">
+<div class = "swiper-slide">
+<button class="main__companies-list_block hidden_tablet">
   <img src="Assets/Images/emblems/Sony.svg" alt="Sony" class="emblem">
 <a href = "#"><img src="Assets/Images/icons/go.svg" alt="Подробнее" class="icon"></a>
+</button>
 </div>
-</div>
-<div class = "main__swiper--slide">
-<div class="main--companies-list_block">
+<div class = "swiper-slide">
+<button class="main__companies-list_block hidden hidden_tablet">
   <img src="Assets/Images/emblems/Lenovo.svg" alt="Lenovo" class="emblem">
 <a href = "#"><img src="Assets/Images/icons/go.svg" alt="Подробнее" class="icon"></a>
+</button>
 </div>
-</div>
-<div class = "main__swiper--slide">
-<div class="main--companies-list_block">
+<div class = "swiper-slide">
+<button class="main__companies-list_block hidden hidden_tablet">
   <img src="Assets/Images/emblems/Samsung.svg" alt="Samsung" class="emblem">
   <a href = "#"><img src="Assets/Images/icons/go.svg" alt="Подробнее" class="icon"></a>
+</button>
 </div>
-</div>
-<div class = "main__swiper--slide">
-<div class="main--companies-list_block">
+<div class = "swiper-slide">
+<button class="main__companies-list_block hidden hidden_tablet">
   <img src="Assets/Images/emblems/Apple.svg" alt="Apple" class="emblem">
   <a href = "#"><img src="Assets/Images/icons/go.svg" alt="Подробнее" class="icon"></a>
+</button>
 </div>
 </div>
-<div class="swiper-pagination">
+<div class="swiper-pagination"></div>
 </div>
-<div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div>
 </div>
-    </main>
 
-    <footer>
-      <div class = "main--button">
-      <button class = "main--button_hide-button" id="hideButton">
-        <span>Показать все</span>
-      </button>
-    </div>
-<script src="scripts.js"></script>
-    </footer>
+<div class = "main--button">
+  <button class = "main--button_hide-button" id="hideButton"> Показать всё</button>
+</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="swiper.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
