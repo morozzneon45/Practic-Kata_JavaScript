@@ -127,7 +127,6 @@ button {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 32px;
   margin: 24px 33px 84px 32px;
-  position: relative;
 }
 
 .main__companies-list_block {

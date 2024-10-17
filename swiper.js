@@ -1,8 +1,8 @@
+// Функция инициализации Swiper
 document.addEventListener('DOMContentLoaded', function () {
-       // Функция инициализации Swiper
        function initSwiper() {
            const swiperElement = document.getElementById('swiper');
-           if (window.innerWidth < 768) { // Измените по необходимости
+           if (window.innerWidth < 768) {
                const swiper = new Swiper(swiperElement, {
                    slidesPerView: 1.2,
                    spaceBetween: 10,
@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', function () {
            }
        }
 
-       // Инициализируем Swiper при загрузке страницы
+       // Инициализация Swiper при загрузке страницы
        initSwiper();
 
        // Переинициализация при изменении размера окна
        window.addEventListener('resize', () => {
            const swiperElement = document.getElementById('swiper');
-           // Удаляем экземпляр Swiper, если он существует
+           
            if (swiperElement.swiper) {
                swiperElement.swiper.destroy(true, true);
            }

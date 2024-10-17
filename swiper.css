@@ -1,0 +1,28 @@
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 180px;
+}
+
+.swiper-pagination-bullet {
+    background-color:  #DDDDDD;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.swiper-horizontal {
+	touch-action: pan-y;
+	overflow: hidden;
+}
+
+@media (min-width: 768px) {
+	.swiper-pagination {
+		display: hidden !important;
+}
+}
+
+@media (min-width: 1120px) {
+	.swiper-pagination {
+		display: hidden !important;
+}
+}
